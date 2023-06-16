@@ -8,7 +8,9 @@
         <scm class="hudson.plugins.git.GitSCM" plugin="git">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
-                <hudson.plugins.git.UserRemoteConfig/>
+                <hudson.plugins.git.UserRemoteConfig>
+                    <url>${repo_url}</url>
+                </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>
                 <hudson.plugins.git.BranchSpec>
