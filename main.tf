@@ -1,5 +1,5 @@
 resource "jenkins_folder" "infra" {
-  name = "infrastructure"
+  name = "infra"
 }
 
 resource "jenkins_job" "job" {
