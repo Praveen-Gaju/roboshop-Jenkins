@@ -17,4 +17,14 @@ resource "jenkins_job" "job" {
   }
 }
 
+data "aws_instance" "jenkins" {
+  instance_id = "i-015d6d0fe5ea1664b"
+}
 
+resource "aws_route53_record" "jenkins" {
+  zone_id     = "Z10378632KDOC11M5RXOI"
+  name        = "jenkins.devopspract.online"
+  type        = "A"
+  ttl         = 30
+  records     = [data.aws_instance.jenkins.public_ip]
+}
