@@ -14,9 +14,9 @@ resource "jenkins_job" "s-job" {
     name      = lookup(element(var.s-job,count.index), "name", null )
   })
 
-#  lifecycle {
-#    ignore_changes = [ template ]
-#  }
+  lifecycle {
+    ignore_changes = [ template ]
+  }
 }
 
 # Pipiline for multi branch Pipiline
@@ -30,9 +30,9 @@ resource "jenkins_job" "m-job" {
     name      = lookup(element(var.m-job,count.index), "name", null )
   })
 
-  #  lifecycle {
-  #    ignore_changes = [ template ]
-  #  }
+    lifecycle {
+      ignore_changes = [ template ]
+    }
 }
 
 # route-53 record for creating jenkins server
