@@ -16,6 +16,7 @@ variable "m-job" {
 
 variable "s-job" {
   default = [
-    { folder = "Infra", name = "roboshop", repo_url = "https://github.com/Praveen-Gaju/roboshop-infra" }
+    { folder = "Infra", name = "roboshop", repo_url = "https://github.com/Praveen-Gaju/roboshop-infra", filename="Jenkinsfile" },
+    { folder = "Infra", name = "App-Deployment", repo_url = "https://github.com/Praveen-Gaju/roboshop-infra" , filename="Jenkinsfile-deployment" }
   ]
 }
