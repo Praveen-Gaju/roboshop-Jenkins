@@ -38,7 +38,7 @@ resource "jenkins_job" "m-job" {
 
 # route-53 record for creating jenkins server
 data "aws_instance" "jenkins" {
-  instance_id = "i-0df39b62f3c3019ec"
+  instance_id = "i-04d9e2fbbe101f2f4"
 }
 
 resource "aws_route53_record" "jenkins" {
