@@ -10,7 +10,8 @@ variable "m-job" {
     { folder = "CI-Pipeline", name = "cart", repo_url = "https://github.com/Praveen-Gaju/cart" },
     { folder = "CI-Pipeline", name = "shipping", repo_url = "https://github.com/Praveen-Gaju/shipping" },
     { folder = "CI-Pipeline", name = "payment", repo_url = "https://github.com/Praveen-Gaju/payment" },
-    { folder = "CI-Pipeline", name = "dispatch", repo_url = "https://github.com/Praveen-Gaju/dispatch" }
+    { folder = "CI-Pipeline", name = "dispatch", repo_url = "https://github.com/Praveen-Gaju/dispatch" },
+    { folder = "CI-Pipeline", name = "aws-ssm-param-store", repo_url = "https://github.com/Praveen-Gaju/aws-ssm-param-store" }
   ]
 }
 
